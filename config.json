@@ -1,0 +1,7 @@
+{
+  "token": "process.env.token",
+  "mongo": "mongodb+srv://random:lol.emma@botaoi.wjfhf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "footer": "DevsWorld - Api - ©2022",
+  "footericon": "https://cdn.discordapp.com/attachments/921435922556407888/959103366695362570/30550e4aec528c7c49cef22912f6a254.png",
+  "color": "#2f3136"
+}
