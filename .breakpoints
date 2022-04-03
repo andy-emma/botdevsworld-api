@@ -7,6 +7,20 @@
         "version": 0,
         "index": 0
       }
+    ],
+    "index.js": [
+      {
+        "id": "1ccc5c4a-6a47-4ec5-8af2-7c2d3bd175b7",
+        "line": 79,
+        "version": 1687,
+        "index": 2742
+      },
+      {
+        "id": "13badc2b-ed62-44f1-8076-a765a20f72d9",
+        "line": 83,
+        "version": 1671,
+        "index": 2879
+      }
     ]
   }
 }

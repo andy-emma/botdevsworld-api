@@ -59,10 +59,6 @@ bot.status({
   type: "WATCHING",
   time: 12
 })
-const files = fs.readdirSync('./handler/').filter(file => file.endsWith('.js'))
-files.forEach(x => {
-require(`./handler/${x}`)(bot)
-});
 bot.loopCommand({
   channel: "954491520323584031",
   code: `$editMessage[959921850668949585;{newEmbed:{title:Estatus de la api.}{description:**__Status Api:__** $jsonRequest[https://api.devsworld.tk/status;status;Down]\n**Code:** $jsonRequest[https://api.devsworld.tk/status;code;Down]\n**Incidentes:** $jsonRequest[https://api.devsworld.tk/status;incidentes;Hay incidentes]\n**Server Ubicación:** Cuernavaca Morelos,Mexico\n**__Status Recursos:__**\n**Ram:** $djsEval[(process.memoryUsage().heapUsed/1024/1024).toFixed(2);yes] MB | $maxRam MB\n**Cpu:** $cpu/100\n**Modelo:** $djsEval[const os = require('os')
@@ -70,6 +66,7 @@ os.cpus().map((i) => i.model)[0];yes]\n**__Tiempo Ahora:__** <t:$truncate[$divid
 executeOnStartup: true,
 every: 600000
 })
+const keepAlive = require('./handler/keepAlive');
 /*  @INFO 
   * Codificado por Random.#6963
   * @INFO
