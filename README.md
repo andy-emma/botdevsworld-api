@@ -1,7 +1,6 @@
 # Bot Oficial | DevsWorld - Api
 ### Este repositorio es publico ya que cualquiera puede hacer los comandos pero este es mas mas facil solo clonar y ya :)
 
-  * Codificado por Random.#6963
   * Unete a nuestro equipo https://www.devsworld.tk | https://www.doctor-stars.studio
   * Porfavor no quites los creditos :(
   * Api usada https://api.devsworld.tk 
