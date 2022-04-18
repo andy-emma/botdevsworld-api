@@ -1,5 +1,5 @@
 module.exports = ({
-name: "appsearch",
+name: "app",
 description: "Busca información sobre una aplicación de la distribuidora Google Play.",
 usage: "s!appsearch <Nombre>",
 code: `

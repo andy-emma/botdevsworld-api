@@ -1,0 +1,26 @@
+{
+  "name": "easier-discord.js",
+  "version": "0.0.1-dev",
+  "description": "making discord bot for easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "chat",
+    "api",
+    "wrapper"
+  ],
+  "author": "fightfarewellfearless",
+  "bugs": {
+    "url": "https://github.com/fightfarewellfearless/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios":"^0.26.1",
+    "debug": "^4.3.4",
+    "discord.js": "^13.6.0"
+  }
+}

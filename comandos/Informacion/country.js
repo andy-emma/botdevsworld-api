@@ -3,35 +3,35 @@ module.exports = {
   code: `
 $title[1;Informacion del pais]
 $addField[1;
-$customEmoji[arrow] **__Nombre del pais:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Nombre del pais:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;alt]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Capital:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Capital:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;capital]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Moneda:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Moneda:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;currencies]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Idiomas:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Idiomas:__**; \`\`\`
 $jsonRequest[
 https://api.devsworld.tk/general/countryinfo?name=$message;langs]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Lada:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Lada:__**; \`\`\`
 +$jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;callCode]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Poblacion:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Poblacion:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;population]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Zonas Horarias__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Zonas Horarias__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;timezones]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Estados/Provincias:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Estados/Provincias:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;provinces]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Continente/Sub:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Continente/Sub:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;region] | $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;subregion]
 \`\`\`;yes]$addField[1;
-$customEmoji[arrow] **__Fronteras:__**; \`\`\`
+$customEmoji[arrow;843200863647301653] **__Fronteras:__**; \`\`\`
 $jsonRequest[https://api.devsworld.tk/general/countryinfo?name=$message;borders]
 \`\`\`;yes]
 $color[1;$getVar[color]]$footer[1;$getVar[footer];$getVar[fooicon]]

@@ -1,8 +1,8 @@
 module.exports = [{
   name: "setup-language",
   code: `$title[1;Idioma | Setup]
-$description[1;Seleccione lo que necesite en los botones. (Recuerde que el idioma por defecto es **Español**)]$color[1;$getVar[color]]$footer[1;$getVar[footer];$getVar[fooicon]]
-$addButton[1;Español;3;espa;no]
+$description[1;Seleccione lo que necesite en los botones. (Recuerde que el idioma por defecto es **Español**)]$color[1;$getVar[color]]$footer[1;$getVar[footer]]
+$addButton[1;Español;3;espa_$authorID;no]
 $addButton[1;Ingles;3;ingle;no]
 $addButton[1;Frances;3;frances;no]
 $onlyPerms[manageserver;{newEmbed:{title:$customEmoji[no] | Error}{description:Lo sentimos solo pueden los administradores y managers.}{color:$getVar[color]}{footer:$getVar[footer]}}]

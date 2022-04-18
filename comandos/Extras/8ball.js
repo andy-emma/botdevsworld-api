@@ -9,5 +9,5 @@ module.exports = {
   $jsonRequest[https://api.devsworld.tk/fun/8ball;respuesta]
   **Pregunta por:**
   $username]
-  $color[1;$getVar[color]] `
+  $color[1;$getVar[color]]$argsCheck[>=1;{newEmbed:{title:}}] `
 }

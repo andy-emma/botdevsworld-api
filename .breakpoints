@@ -1,5 +1,13 @@
 {
   "files": {
+    "comandos/Extras/test3.js": [
+      {
+        "id": "d6bfe0dc-0abe-4827-a2f9-41bea7063d08",
+        "line": 8,
+        "version": 1,
+        "index": 318
+      }
+    ],
     "comandos/Informacion/eval.js": [
       {
         "id": "c003da5d-d007-4fd7-83b8-f281369a4dc5",
@@ -10,16 +18,10 @@
     ],
     "index.js": [
       {
-        "id": "1ccc5c4a-6a47-4ec5-8af2-7c2d3bd175b7",
-        "line": 79,
-        "version": 1687,
-        "index": 2742
-      },
-      {
-        "id": "13badc2b-ed62-44f1-8076-a765a20f72d9",
-        "line": 83,
-        "version": 1671,
-        "index": 2879
+        "id": "5f34f63e-c3fb-4fd7-b867-82c2a8a515a5",
+        "line": 78,
+        "version": 199,
+        "index": 1812
       }
     ]
   }

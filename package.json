@@ -1,5 +1,5 @@
 {
-  "name": "DevsWorld-Api-Bot",
+  "name": "Spirit",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
@@ -10,12 +10,18 @@
   "author": "Andres Emmanuel",
   "license": "Apache 2.0",
   "dependencies": {
-    "aoi.js": "^5.1.1",
+    "@akarui/aoi.music": "^1.1.0",
+    "aoi.js": "^5.1.2",
     "aoi.mongo": "^0.2.0",
+    "axios": "^0.26.1",
     "colors": "^1.4.0",
+    "debug": "^4.3.4",
     "discord.js": "^13.6.0",
+    "easier-discord.js": "github:Bumblebee-3/simpler-discord",
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
     "fs": "^0.0.1-security",
+    "i18n": "^0.14.2",
     "oi": "^0.9.5",
     "ping-monitor": "^0.6.2",
     "request-promise-native": "^1.0.9"

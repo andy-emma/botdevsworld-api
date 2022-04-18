@@ -5,7 +5,7 @@ const bot = new api.Bot({
   token: process.env.token, 
   prefix: "$getServerVar[prefix]",
   shardAmmount: 3,
-  errorMessage: ["","{newEmbed:{title:<a:cry:952927254575480852> | Error}{description:Contac / Contacte:\nRandom.#6963}{color:RED}{footer:DevelopersWorld - ©2022}{timestamp:ms}}"],
+  errorMessage: ["","{newEmbed:{title:<a:cry:952927254575480852> | Error}{description:Contacte:\nRandom.#6963}{color:RED}{footer:Spirit - ©2022}{timestamp:ms}}"],
   sharding: true,
   everyoneMention: `false`,
   suppressAllErrors: false,
@@ -52,28 +52,51 @@ bot.variables({
   footer: uwu.footer,
   fooicon: uwu.footericon,
   language: "es",
-  prefix: "ap!"
+  prefix: "sp!",
+  addbot: "",
+  votos: "0",
+  afavor: "0",
+  encontra: "0",
+  author: "0"
 })
 bot.status({
-  text: "api.devsworld.tk OP",
+  text: "Spirit Bot OP",
   type: "WATCHING",
   time: 12
 })
+const voice = new api.Voice(bot, {
+  soundcloud: {
+    clientId: "0SrIxZuNreDuAedhD5rxw6lH582l5JoP",
+  },
+  cache: {
+    cacheType: "Memory",//Disk | None
+    enabled: true,
+  },
+},true);
 bot.loopCommand({
-  channel: "954491520323584031",
-  code: `$editMessage[959921850668949585;{newEmbed:{title:Estatus de la api.}{description:**__Status Api:__** $jsonRequest[https://api.devsworld.tk/status;status;Down]\n**Code:** $jsonRequest[https://api.devsworld.tk/status;code;Down]\n**Incidentes:** $jsonRequest[https://api.devsworld.tk/status;incidentes;Hay incidentes]\n**Server Ubicación:** Cuernavaca Morelos,Mexico\n**__Status Recursos:__**\n**Ram:** $djsEval[(process.memoryUsage().heapUsed/1024/1024).toFixed(2);yes] MB | $maxRam MB\n**Cpu:** $cpu/100\n**Modelo:** $djsEval[const os = require('os')
+  channel: "963847164457525348",
+  code: `$editMessage[963847452383920238;{newEmbed:{title:Estatus de la api.}{description:**__Status Api:__** $jsonRequest[https://api.devsworld.tk/status;status;Down]\n**Code:** $jsonRequest[https://api.devsworld.tk/status;code;Down]\n**Incidentes:** $jsonRequest[https://api.devsworld.tk/status;incidentes;Hay incidentes]\n**Server Ubicación:** Cuernavaca Morelos,Mexico\n**__Status Recursos:__**\n**Ram:** $djsEval[(process.memoryUsage().heapUsed/1024/1024).toFixed(2);yes] MB | $maxRam MB\n**Cpu:** $cpu/100\n**Modelo:** $djsEval[const os = require('os')
 os.cpus().map((i) => i.model)[0];yes]\n**__Tiempo Ahora:__** <t:$truncate[$divide[$dateStamp;1000]]:F> | <t:$truncate[$divide[$dateStamp;1000]]:R>}{footer:Este mensaje se actualiza cada 10 minutos.\n$getVar[footer]:$getVar[fooicon]}{timestamp:ms}{color:$getVar[color]}}]`,
 executeOnStartup: true,
 every: 600000
 })
-const keepAlive = require('./handler/keepAlive');
-/*  @INFO 
-  * Codificado por Random.#6963
-  * @INFO
-  * Unete a nuestro equipo https://www.devsworld.tk | https://www.doctor-stars.studio
-  * @INFO
-  * Porfavor no quites los creditos :(
-  * @INFO
-  * Api usada https://api.devsworld.tk 
-  * @INFO
-*/
+bot.command({
+name: "<@959103746560897104>",
+aliases: "<@!959103746560897104>",
+code:`$author[1;$username[$clientID];$userAvatar[$clientID]]
+$description[1;Hola, <@$authorID> Gracias por mencionarme, mi prefix en este servidor es: **$getServerVar[prefix]**\nSi consideras unete al servidor oficial de mi api y bot :) al igual que si necesitas ayuda para usar mi api.]
+$addTimestamp[1]$thumbnail[1;$getVar[fooicon]]
+$color[1;$getVar[color]]$footer[1;$getVar[footer]]`,
+nonPrefixed: true
+})
+const express = require("express")
+const app = express()
+app.set('view engine', 'ejs');
+app.get('/', function(req, res) {
+res.render('index');
+});
+app.use(express.static(__dirname + "/"), (_, res, next) => {
+  res.status(404)
+  res.sendFile(__dirname + "/404.png")
+});
+app.listen(8080);
